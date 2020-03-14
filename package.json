@@ -1,0 +1,57 @@
+{
+  "name": "rslt",
+  "version": "1.0.0",
+  "description": "Too simply Result Type for Typescript",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
+    "jest": "jest",
+    "test": "npm run lint && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamash723/rslt.git"
+  },
+  "keywords": [
+    "typescript",
+    "result"
+  ],
+  "author": "Shuhei Yamashita <b.e7472@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yamash723/rslt/issues"
+  },
+  "homepage": "https://github.com/yamash723/rslt#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "@typescript-eslint/typescript-estree": "^2.23.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-simple-import-sort": "^5.0.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.1",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/test/**/*.spec.ts"
+    ]
+  }
+}
